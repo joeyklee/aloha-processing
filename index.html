@@ -1,176 +1,1775 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-
-	<title>Processing Workshop</title>
-
-	<meta name="description" content="Data Vis Talk">
-	<meta name="author" content="Joey Lee">
-
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-	<link rel="stylesheet" href="assets/style/reveal.css">
-	<link rel="stylesheet" href="assets/style/night.css" id="theme">
-
-	<!-- Code syntax highlighting -->
-	<link rel="stylesheet" href="assets/style/zenburn.css">
-
-	<!-- Printing and PDF exports -->
-	<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
-
-	<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <title>Processing Workshop</title>
+    <meta name="description" content="Data Vis Talk">
+    <meta name="author" content="Joey Lee">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="assets/style/reveal.css">
+    <link rel="stylesheet" href="assets/style/night.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="assets/style/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
 </head>
 
 <body>
-	<div class="reveal">
-
-		<!-- Any section element inside of this container is displayed as a slide -->
-		<div class="slides">
-			<section>
-				<h1><em>Aloha Processing!</em> </h1>
-				<h2>An introduction to Processing</h2>
-				<p>
-					<small>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1><em>Aloha Processing!</em> </h1>
+                <h2>An introduction to Processing</h2>
+                <p>
+                    <small>
 						<a href="http://www.jk-lee.com" target='_blank'>Joey Lee</a> / 
 						<a href="https://github.com/joeyklee" target='_blank'>@joeyklee</a>
 					</small>
-					<br />
-					<small>Geographical Sciences 472: Data Visualization & Cartography</small>
-				</p>
-			</section>
+                    <br />
+                    <small>Geographical Sciences 472: Data Visualization & Cartography</small>
+                </p>
+            </section>
+            <section>
+                <h1>Examples of Things Made in Processing</h1>
+            </section>
+            <section>
+                <h1>Aaron Koblin</h1>
+                <h2>Flight Patterns + Senseable City Lab</h2>
+            </section>
+            <section>
+                <iframe width="960" height="700" src="https://www.youtube.com/embed/4v4XxlfVk3o" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1>Pedro Cruz</h1>
+                <h2>Portugal's Blood Vessels</h2>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/31031656" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1>Ben Mandeberg</h1>
+                <h2>Midi Mirror</h2>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/40382774" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/40382774">Tommy Wiseau Midi Mirror demo</a> from <a href="https://vimeo.com/benmandeberg">Ben Mandeberg</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </section>
+            <section>
+                <h1>Jer Thorp</h1>
+                <h2>Science, Art, & Design</h2>
+            </section>
+            <section>
+                <iframe width="960" height="700" src="https://www.youtube.com/embed/-q6aA5qdCzU" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1>Christopher Pietsch, Gunnar Friedrich, Pierre La Baume, David Ikuye and Luis Grass</h1>
+                <h2>LiquidData </h2>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/43120464" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1>Casey Reas</h1>
+                <h2>A Mathematical Theory of Communication </h2>
+            </section>
+            <section>
+                <iframe src="https://player.vimeo.com/video/136017050?color=99cd4f" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/136017050">Eyeo 2015 &ndash; Casey Reas</a> from <a href="https://vimeo.com/eyeofestival">Eyeo Festival // INSTINT</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <p>See: 36:40</p>
+            </section>
+            <section>
+                <h1>MIT Senseable City Lab</h1>
+                <h2>Live Singapore! </h2>
+            </section>
+            <section>
+                <iframe width="960" height="700" src="https://www.youtube.com/embed/2aEPkyOBtRo" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h1>Pixtil</h1>
+                <h2>Generative Textiles</h2>
+            </section>
+            <section>
+                <img src="http://www.creativeapplications.net/wp-content/uploads/2015/05/pixtil_03.jpg">
+                <center> Delphine Saltet and Olivier Paradeise, Pixtil (http://www.creativeapplications.net/processing/pixtil-weaving-generative-patterns-using-traditional-textile-techniques/)</center>
+            </section>
+            <section>
+                <h1>Benedikt Groß</h1>
+                <h2>Metrography</h2>
+            </section>
+            <section>
+                <img src="http://www.looksgood.de/log/wp-content/uploads/2012/02/metrography_black_1.png">
+                <center> Benedikt Groß, Metrography (http://benedikt-gross.de/log/2012/02/metrography-london-tube-map-to-large-scale-collective-mental-map/)</center>
+            </section>
+            <section>
+                <h1>Now let's learn!</h1>
+                <h2>All of the documentation can be found at the repo here: <a href="https://github.com/joeyklee/aloha-processing">https://github.com/joeyklee/aloha-processing</a></h2>
+            </section>
+            <section>
+                <h3>What You'll Need</h3>
+                <ul>
+                    <li>Download <a href="https://processing.org/download/">Processing</a> for your specific operating system.</li>
+                    <li>The confidence, curiosity and enthusiasm to learn and the drive to teach yourself and the patience to help those around you.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>What you need to do:</h3>
+                <ul>
+                    <li>Do the <a href="http://hello.processing.org/">One hour of code</a> with Dan Shiffman to get familiar with Processing and the concepts we'll dive further into today.</li>
+                </ul>
+            </section>
+            <section>
+                <p>In this workshop we will be introduced to <a href="https://processing.org">Processing</a> - a programming language and environment developed "to promote literacy within the visual arts and visual literacy within technology". Processing is used across a variety of communities but has had particular success within the art and design community (and data visualization community) for its strength in generating visual and interactive output.
+            </section>
+            <section>
+                We will will use Processing to:</p>
+                <ol>
+                    <li>Become familiar with the fundamental concepts of programming visual outputs with code.</li>
+                    <li>Build our confidence in using code as a material/tool to turn our ideas into something tangible.</li>
+                    <li>Learn about the process of deconstructing tasks into modular steps (don't worry if this doesn't mean anything to you yet!).</li>
+                    <li>Get introduced to the ways in which code can create accountability for the visualization process.</li>
+                </ol>
+            </section>
+            <section>
+                <p>We will use the concepts learned in this workshop throughout the rest of the course to learn how to systematically approach data visualization problems and explore other tools and methods of producing visuals with data.</p>
+            </section>
+            <section>
+                <h3>Learning Outcome / Assignment:</h3>
+                <p> For your assignment choose <strong>one</strong> these three Proun drawings by El Lissitzsky.</p>
+                <p><img width="250" src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Lissitzky_Proun_93.jpg" alt="" />
+                    <img width="250" src="http://www.mpsaz.org/dobson/staff/hxfinzer/academic_decathlon/art_reproductions_2012_2013/images/14_proun.jpg" alt="" />
+                    <img width="250" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Lazar_El_Lissitzky_-_Kestnermappe_Proun,_Rob._Levnis_and_Chapman_GmbH_Hannover_-5_-_Google_Art_Project.jpg" alt="" /></p>
+                <p>You will develop <strong>2 versions</strong>:</p>
+                <ol>
+                    <li>The first will be a version as close to the image as possible.</li>
+                    <li>The second will be a <strong>remix</strong> of the image - playing with the composition through the use of alternative colors, strokeWeight, object positioning, etc. - save your code in a separate file!</li>
+                </ol>
+            </section>
+            <section>
+                <h2>S2. Introduction to Processing</h2>
+            </section>
+            <section>
+                <p>"Processing is for writing software to make images, animations, and interactions. The idea is to write a single line of code, and have a circle show up on the screen. Add a few more lines of code, and the circle follows the mouse. Another line of code, and the circle changes color when the mouse is pressed. We call this sketching with code. You write one line, then add another, then another, and so on. The result is a program created one piece at a time. " - Casey Reas &amp; Ben Fry, <em>Getting Started With Processing</em></p>
+            </section>
+            <section>
+                <p>"Processing relates software concepts to principles of visual form, motion, and interaction. It integrates a programming language, development environment, and teaching methodology into a unified system. Processing was created to teach fundamentals of computer programming within a visual context, to serve as a software sketchbook, and to be used as a production tool. Students, artists, design professionals, and researchers use it for learning, prototyping, and production" - Casey Reas, <em>Processing, A Programming Handbook for Visual Designers and Artists</em></p>
+            </section>
+            <section>
+                <p>"Software is a unique medium with unique qualities... Every programming language is a distinct material...Sketching is necessary for the development of ideas...Programming is not just for engineers..." - Casey Reas, <em>Processing, A Programming Handbook for Visual Designers and Artists</em></p>
+            </section>
+            <section>
+                <p>In the last 10 years, Processing has become one of the most used tools for creating visual outputs (among other things). It has a wide usership in many communities, one being the data visualization community because it allows for flexible and custom exploration of data, it is powerful in dealing with large datasets, and has a relatively friendly syntax and large user community.</p>
+            </section>
+            <section>
+                <h2>S3. The Community</h2>
+                <p>The ethos of Processing is to create an open environment to engage with technology. There's an active community of artists, designers, and scientists from all different domains helping to develop the language &amp; make Processing more accessible. If you continue to work in Processing, you'll definitely find lots of examples and support to help turn your ideas into something tangible. These are some photos of the people that are helping to make Processing bigger, better, and easier to learn.
+                    <p><img width="250" src="https://pbs.twimg.com/profile_images/54057404/Photo_14.jpg"> </br>
+                        <a href="http://shiffman.net/">Dan Shiffman</a></p>
+            </section>
+            <section>
+                <h2>S4. The Processing Environment</h2>
+            </section>
+            <section>
+                <h3>The Text Editor &amp; Display Window</h3>
+                <p>The Processing Development Environment (IDE) looks like this:
+                    <img width="500" src="assets/img/pde.png" alt="" /></p>
+                <center>Credits: "Getting started with Processing" - Fry </center>
+                <p>PDE Elements:</p>
+            </section>
+            <section>
+                <h1>S5. Getting Started</h1>
+            </section>
+            <section>
+                <p>If you did the <a href="http://hello.processing.org/">One hour of code</a> with Dan Shiffman, you should now be familiar with with these fundamental concepts in the context of a <strong>static sketch</strong> and <strong>dynamic sketch</strong>:</p>
+            </section>
+            <section>
+                <h2>A static sketch</h2>
+                <p><img src="assets/img/basic-sketch.png" alt="" /></p>
+                <p>A static program runs sequentially, from top to bottom.</p>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <p>setting the <strong>canvas size</strong> using the <strong>size()</strong> function.</p>
+                        <pre><code>
+// size();
+size(700, 500);
+				</code></pre></li>
+                    <li>
+                        <p>setting the <strong>background color</strong> of a canvas using <strong>RGB</strong> color parameters.</p>
+                        <pre><code> 
+// background();
+background(217, 250, 240);
+				</code></pre></li>
+                    <li>
+                        <p>adding <strong>color</strong> to <strong>shapes</strong> and <strong>strokes</strong> using <strong>RGB</strong> color parameters to the following <strong>functions</strong>:</p>
+                        <pre><code>  
+// fill(); 
+fill(255, 137, 82);
 
-			<!-- <section>
-				<h3>The slides & links can be found on github:</h3>
-				<h2>
-				<p>
-					<a href='joeyklee.github.io/presentations/ubc_springsymposium2015' target='_blank'>joeyklee.github.io/ubc_springsymposium2015</a>
-				</p>
-				</h2>
-			</section> -->
+// stroke();
+stroke(255, 82, 82);
+				</code></pre></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <p>drawing <strong>shapes</strong> using <strong>functions</strong> and using <strong>screen coordinates values</strong> to set the shapes. Some Processing shape functions you know are:</p>
+                        <pre><code>
+// ellipse();
+ellipse(width * 0.25, height * 0.25, 50, 50);
 
-			<section>
-				<h1>Examples of Things Made in Processing</h1>
-			</section>
+// rect();
+rect(width * 0.5, height * 0.5, 50, 50);
+            					</code></pre></li>
+                </ul>
+            </section>
 
-			<section>
-				<h1>Aaron Koblin</h1>
-				<h2>Flight Patterns + Senseable City Lab</h2>
-			</section>
-			<section>
-				<iframe width="960" height="700" src="https://www.youtube.com/embed/4v4XxlfVk3o" frameborder="0" allowfullscreen></iframe>
-			</section>
+            <section>
+            	<h2>A dynamic sketch</h2>
+            	<p>A dynamic sketch makes use of Processing's <strong>setup()</strong> and <strong>draw()</strong> functions to structure a logic for <strong>interaction</strong> and <strong>animations</strong>.</p>
 
-			<section>
-				<h1>Pedro Cruz</h1>
-				<h2>Portugal's Blood Vessels</h2>
-			</section>
-			<section>
-				<iframe src="https://player.vimeo.com/video/31031656" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</section>
-			<section>
-				<h1>Ben Mandeberg</h1>
-				<h2>Midi Mirror</h2>
-			</section>
-			<section>
-				<iframe src="https://player.vimeo.com/video/40382774" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/40382774">Tommy Wiseau Midi Mirror demo</a> from <a href="https://vimeo.com/benmandeberg">Ben Mandeberg</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-			</section>
-			<section>
-				<h1>Jer Thorp</h1>
-				<h2>Science, Art, & Design</h2>
-			</section>
-			<section>
-				<iframe width="960" height="700" src="https://www.youtube.com/embed/-q6aA5qdCzU" frameborder="0" allowfullscreen></iframe>
-			</section>
-			<section>
-				<h1>Christopher Pietsch, Gunnar Friedrich, Pierre La Baume, David Ikuye and Luis Grass</h1>
-				<h2>LiquidData </h2>
-			</section>
-			<section>
-				<iframe src="https://player.vimeo.com/video/43120464" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</section>
+            	<p>Together they look something like this:</p>
 
-			<section>
-				<h1>Casey Reas</h1>
-				<h2>A Mathematical Theory of Communication </h2>
-			</section>
-			<section>
-				<iframe src="https://player.vimeo.com/video/136017050?color=99cd4f" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/136017050">Eyeo 2015 &ndash; Casey Reas</a> from <a href="https://vimeo.com/eyeofestival">Eyeo Festival // INSTINT</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-				<p>See: 36:40</p>
-			</section>		
-			<section>
-				<h1>MIT Senseable City Lab</h1>
-				<h2>Live Singapore! </h2>
-			</section>
-			<section>
-				<iframe width="960" height="700" src="https://www.youtube.com/embed/2aEPkyOBtRo" frameborder="0" allowfullscreen></iframe>
-			</section>
+            	<p><img width="600" src="assets/img/setup&amp;draw.png" alt="" /></p>
 
-			<section>
-				<h1>Pixtil</h1>
-				<h2>Generative Textiles</h2>
-			</section>
-			<section>
-				<img src="http://www.creativeapplications.net/wp-content/uploads/2015/05/pixtil_03.jpg">
-				<center> Delphine Saltet and Olivier Paradeise, Pixtil (http://www.creativeapplications.net/processing/pixtil-weaving-generative-patterns-using-traditional-textile-techniques/)</center>
-			</section>
+            	<center> credits: "Learning Processing" - Shiffman </center>
+            </section>
 
-			<section>
-				<h1>Benedikt Groß</h1>
-				<h2>Metrography</h2>
-			</section>
-			<section>
-				<img src="http://www.looksgood.de/log/wp-content/uploads/2012/02/metrography_black_1.png">
-				<center> Benedikt Groß, Metrography (http://benedikt-gross.de/log/2012/02/metrography-london-tube-map-to-large-scale-collective-mental-map/)</center>
-			</section>
+            <section>
+            <p><strong>A Responsive Ellipse-drawing tool</strong><br>
+            <img width="250" src="assets/img/dynamic-sketch.png" alt="" /></p>
+            	<p>Run this in your PDE and we'll break it down line-by-line:</p>
 
-			<section>
-				<h1>Now let's learn!</h1>
-			</section>
-		</div>
+            	<pre><code>
+void setup() {
+    size(700, 500);
+    background(255);
+}
 
-	</div>
+void draw() {
+  if (mousePressed) {
+    background(255);
+  }
+  ellipse(mouseX,mouseY,40,40);
+}
+            	            	</code></pre>
+            </section>
 
-	<script src="assets/js/head.min.js"></script>
-	<script src="assets/js/reveal.js"></script>
+            <section>
+            	<p><strong>setup()</strong> Set up your sketch by calling all statements that only need to occur once during your drawing - this might be things like the size() of your canvas.</p>
 
-	<script>
+            	<p><strong>draw()</strong> Continuously repeat the statements within this function - continually evaluate the statements in a loop, over and over and over, forever.</p>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            	<p>Here, the computer is continually asking, "is the mousePressed?", "how about now?", "and now?", "how about now?", for infinity. When you finally press the mouse, it will change the background color to white and "erase" the ellipses you've drawn, but only as long as your mouse is pressed.</p>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+            	<p><strong>NOTE</strong>: <strong>mousePressed</strong> is equal to <strong>TRUE</strong> whenever your mouse is pressed and <strong>FALSE</strong> otherwise. Therefore it is a <strong>variable</strong> which stores a <strong>boolean</strong> of either <strong>TRUE</strong> or <strong>FALSE</strong> in response to a mouse <strong>event</strong>.</p>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+            </section>
 
-	</script>
+            <section>
+            	<p>What the above example shows is:</p>
 
+            	<ul>
+            	<li>our basic understanding of <strong>conditional</strong> statement using the <strong>if statement</strong>.</li>
+            	<li>the use of <strong>variables</strong> - in this case the <strong>in-built</strong> variables called <strong>mouseX</strong>, <strong>mouseY</strong>, and <strong>mousePressed</strong>.</li>
+            	</ul>
+
+            </section>
+
+            <section>
+            	
+            	<h2>Dynamic Sketch Remix</h2>
+
+            	<p>Take 5 minutes now and remix the code from the "dynamic sketch":</p>
+
+            	<ul>
+            	<li>add 1 more new shape that responds to your <strong>mouseX</strong> and <strong>mouseY</strong> and</li>
+            	<li>Use the conditional to affect the color of the shapes by the <strong>mousePressed</strong>.</li>
+            	</ul>
+            </section>
+            <section>
+            	<p>Here's a sample of a sketch that tracks the speed of your mouse in the X and Y direction and maps it to colored bars:</p>
+            	<img width = "250" src="assets/img/mouse-speed.png" alt="" />
+
+            	<pre><code>
+void setup() {
+  size( 700, 500);
+  smooth();
+  noStroke();
+}
+
+void draw() {
+  if (mousePressed) {
+    background(255);
+    fill( 0, 0, 255);
+  } else {
+    // create a random fill with transparency
+    fill(random(100), random(255), random(255), random(50, 100));
+  }
+
+  // make a variable for the radius which calculates a radius for the ellipse based on the speed of the mouse
+  // mouseX is the current screen location of the mouse
+  // pmouseX is the previous screen location of the mouse
+  // thus the absolute difference of the current location minus the previous location is the speed
+  int speedX = abs(mouseX-pmouseX );
+  int speedY = abs(mouseY-pmouseY );
+  // responsive bar
+  rect(width*0.25, height*0.75, 30, speedY*-2);
+  rect(width*0.25+30, height*0.75+15, speedX*2, 30);
+}
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h3>Saving your work</h3>
+
+            	<p>When you're programming, saving your work is super important. Let's save our first program.</p>
+
+            	<ul>
+            	<li>From the PDE, go to "save..."</li>
+            	<li>Navigate to a folder called "Sketches" (or create one if there isn't already)</li>
+            	<li>Save your work with a name that doesn't include spaces. The convention is to use "camel case" ,like:
+
+            	<ul>
+            	<li>"myFirstSketch"</li>
+            	</ul>
+            	</li>
+            	</ul>
+
+
+            	<p>You'll notice when you  save your "sketch" the file type will be added to the end of whatever you called your progam. So if you named your project "myFirstSketch", you will see in your folder "myFirstSketch.pde". The ".pde" is the processing file type (similar to when you see a .csv or .py or .r or .xls, etc etc).</p>
+            </section>
+
+            <section>
+            	<h1><center> <em>How do you feel? Empowered? Confused? Excited? </em> </center></h1>
+            </section>
+            <section>
+            	<h1><center> <em>Let's learn more! </em> </center></h1>
+            </section>
+            <section>
+            	<h1>S6: Fundamentals</h1>
+            </section>
+            <section>
+
+            	<h2>S6.1: Structure</h2>
+
+            	<p>Voltaire once said, "If you wish to converse with me, define your terms". In this section, we're going to define a number of terms so we can all speak the same language when refering to the different elements of a program.</p>
+            </section>
+
+            <section>
+            	<p>What you should learn and remember from this section are:</p>
+
+            	<ol>
+            	<li>comments</li>
+            	<li>printing</li>
+            	<li><strong>functions</strong> can have a number of <strong>parameters</strong> that are passed <strong>arguments</strong>
+
+            	<ul>
+            	<li>e.g. size() is a <strong>function</strong> that has two <strong>parameters</strong>: <strong>width</strong> and <strong>height</strong>. We can pass 2 numbers in like 700 and 500 which are the <strong>arguments</strong>.</li>
+            	</ul>
+            	</li>
+            	<li>expressions &amp; statements</li>
+            	</ol>
+            </section>
+            <section>
+            	<h3>S6.1.1: comments</h3>
+
+            	<p>Remember seeing those double forward slashes (//) in the programs above? these are called <strong>comments</strong> - they are invisible to the computer and do not get evaluated by the computer.</p>
+
+            	<p>These are useful when programming to help you (and others who read your code) keep track of what's happening in your program and allows you to test different functions and statements.</p>
+            </section>
+            <section>
+            	<p>We can use two methods of comments:</p>
+
+            	<p>For <strong>single line comments</strong>: //</p>
+
+            	<pre><code>
+// fill(255, 0, 0);
+// ellipse(250, 100, 50, 50);
+            	</code></pre>
+
+            	<p>OR</p>
+
+            	<p><strong>Block comments</strong> for multiple lines of code:</p>
+
+            	<pre><code>
+/* 
+fill(255, 0, 0);
+ellipse(250, 100, 50, 50);
+*/
+            	</code></pre>
+            </section>
+            <section>
+            	<p>TIP: We can use comments to help us structure our logical steps when writing code. For example:</p>
+
+            	<pre><code>
+// first set the canvas size
+
+// next set the canvas color
+
+// next draw a circle in the center of the canvas. Since the canvas is 700 pixels wide and 500 pixels tall, the center must be at (350, 250). 
+
+// next draw a triangle about 1/3 the width of the canvas
+
+// ... 
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h3>S6.1.2: Printing to the console:</h3>
+
+            	<p>The most basic way to get feedback from a computer is by "printing to the console." We can do this by using the <em>print()</em> or <em>println()</em> functions. The difference between <em>print()</em> and <em>println()</em> is that <em>print()</em> does not start a new line break after each function call. If this seems like a bunch of hogwash, try out the examples below :)</p>
+
+            	<p><em>print()</em></p>
+
+            	<pre><code>
+print("Hello World");
+print("My name is Joey");
+print("It is raining outside");
+            	</code></pre>
+
+            	<p><em>println()</em></p>
+
+            	<pre><code>
+println("Hello World");
+println("My name is Joey");
+println("It is raining outside");
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h3>S6.1.3: functions</h3>
+
+            	<p><strong>Functions</strong> allow you to draw shapes, set colors, calculate numbers, and to execute many other types of actions. A function’s name is usually a lowercase word followed by parentheses. Functions have <strong>parameters</strong> in which you fill in with <strong>arguments</strong>.</p>
+
+            	<p>The comma-separated elements between the parentheses are the <strong>parameters</strong> that you fill with <strong>arguments</strong>, and they affect the way the function works. Some functions have no parameters and others have many. This program demonstrates the size() and background() functions.
+            	cont.</p>
+            </section>
+
+
+            <section>
+            	<pre><code>
+// The size function has two parameters. 
+//The first sets the width of the display window and the second sets the height
+// the arguements here are 200, 200
+size(200, 200);
+
+
+// This version of the background function has one parameter.
+// It sets the gray value for the background of the display window in the range of 0 (black) to 255 (white)
+// the argument here is 102
+background(102);
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h3>S6.1.4: expressions &amp; statements:</h3>
+
+
+            	<p>Using an analogy to human languages, a software expression is like a phrase. Software expressions are often combinations of operators such as +, *, and / that operate on the values to their left and right. A software expression can be as basic as a single number or can be a long combination of elements. An expression always has a value, determined by evaluating its contents.</p>
+            	<p>Expressions</p>
+            	<pre><code>
+// expression       // value
+10 &lt; 50             true
+
+// expression       // value
+5*3                 15
+            	</code></pre>
+            </section>
+
+            <section>
+            	<p>A Statement</p>
+            	<p>A statement - composed of a set of expressions - is like a sentence that gets translated into machine readable code that instructs the computer to do something. For example we see that the collection of these expressions makes a statement (below) that tell the computer to do a particular task.</p>
+
+            	<pre><code>
+size(200, 200);     // Runs the size() function to set the canvas size
+int x;              // Declares a new variable x as an integer type
+x = 102;            // Assigns the value 102 to the variable x
+background(x);      // Runs the background() function
+            	</code></pre>
+
+            </section>
+
+            <section>
+            	<h2>S6.2: Shape</h2>
+
+            	<p>Let's dive into how we can draw shapes with Processing.</p>
+            </section>
+
+            <section>
+            	<h3>S6.2.1: coordinates</h3>
+
+            	<p>The coordinate space of a Processing canvas is set using the <em>size()</em> function. The parameters for <em>width</em> and <em>height</em> sets the number of pixels that will be in the <em>x-coordinate</em> space and <em>y-coordinate</em> space.</p>
+            	<p>The Processing canvas starts at (0,0) at the top-left corner of the canvas.</p>
+
+            	<p><img width="500" src="assets/img/coordinate-space.png" alt="" /></p>
+
+            	<center>Credits: "A Programming Handbook for Visual Artists and Designers" - Reas & Fry</center>
+            	<!-- <p>*for your reference: Processing also comes with a number of other renderers including a 3D renderer, but we won't get into this now - just something to think about!</p> -->
+            </section>
+            <section>
+            	<h3>S6.2.2: primitives</h3>
+
+            	<p>Processing's primitive shapes are the bread and butter of making visual output with code. As we saw in our first program in which we made a square and circle with one function, there are other primitive shapes that we can use. These primitives are listed below:</p>
+            </section>
+
+            <section>
+            	<p><strong>point(x,y)</strong></p>
+
+            	<p><img src="assets/img/point.png" alt="" /></p>
+
+            	<p>Experiment: draw 5 points in a row on your screen</p>
+            	</section>
+            <section>
+
+            	<p><strong>line(x1, y1, x2, y2)</strong></p>
+
+            	<p><img src="assets/img/line.png" alt="" /></p>
+
+            	<p>Experiment: draw 3 "x's" on your screen using lines</p>
+            </section>
+
+            <section>
+            	<p><strong>triangle(x1, y1, x2, y2, x3, y3)</strong></p>
+
+            	<p><img src="assets/img/triangle.png" alt="" /></p>
+
+            	<p>Experiment: draw 3 triangles if different sizes slightly overlapping eachother</p>
+            </section>
+            <section>
+
+            	<p><strong>quad(x1, y1, x2, y2, x3, y3, x4, y4)</strong></p>
+
+            	<p><img src="assets/img/quad.png" alt="" /></p>
+
+            	<p>Experiment: draw 1 funky quadrilateral</p>
+
+            </section>
+            <section>
+            	<p><strong>rect(x, y, width, height)</strong></p>
+
+            	<p><img src="assets/img/rect.png" alt="" /></p>
+
+            	<p>Experiment: draw 2 rectangles with exactly the same arguements - use the rectMode(CENTER) function for 1 of the rectangles and see what it does.</p>
+
+            </section>
+            <section>
+            	<p><strong>ellipse(x, y, width, height)</strong></p>
+
+            	<p><img src="assets/img/ellipse.png" alt="" /></p>
+
+            	<p>Experiment: draw a "bullseye" target with 6 ellipses. Play will fill colors to change the color of each ellipse.</p>
+            </section>
+            <section>
+            	<p><strong>bezier(x1, y1, cx1, cy1, cx2, cy2, x2, y2)</strong></p>
+
+            	<p><img src="assets/img/bezier.png" alt="" /></p>
+
+            	<p>Experiment: draw 1 bezier curve to see how it works.</p>
+            </section>
+            <section>
+            	<h3>S6.2.3: properties</h3>
+
+            	<p>In Processing we can change the properties of the shapes to affect their fill color, stroke color, and drawing mode. Let's go over a few of them here:</p>
+
+            	<h4>Basic Color properties</h4>
+
+            	<p><em>If we use RGB color space</em>:</p>
+
+            	<pre><code>
+* value1 = red          (between 0 - 255)
+* value2 = green        (between 0 - 255)
+* value3 = blue         (between 0 - 255)
+* alpha = transparency  (between 0 - 100)
+            	</code></pre>
+            </section>
+            <section>
+            	<p><em>Processing comes with a handy Color tool to select colors</em></p>
+
+            	<p><img src="assets/img/colortool.png" alt="" /></p>
+
+            </section>
+            <section>
+            	<p><strong>fill()</strong></p>
+
+            	<pre><code>
+fill(value1, value2, value3)
+fill(value1, value2, value3, alpha)
+            	</code></pre>
+            </section>
+
+            <section>
+            	<p><strong>noFill()</strong></p>
+
+            	<p>Use the <em>noFill()</em> function if you don't want a fill color</p>
+
+            	<pre><code>
+size(700, 500);
+
+// with fill
+fill(242, 172, 20);
+ellipse(width*0.25, height * 0.5, 150, 150);
+
+// no fill
+noFill();
+ellipse(width*0.75, height * 0.5, 150, 150);
+            	</code></pre>
+
+            	<p><img width="400" src="assets/img/nofill.png" alt="" /></p>
+
+            	<p>Experiment: make your own example using noFill() with another set of shapes like a triangle and rectangle.</p>
+            </section>
+            <section>
+            	<h4>Basic Stroke Properties</h4>
+
+            	<p><strong>stroke()</strong></p>
+
+            	<pre><code>
+stroke(value1, value2, value3)
+stroke(value1, value2, value3, alpha)
+            	</code></pre>
+            </section>
+            <section>
+            	<p><strong>noStroke()</strong></p>
+
+            	<p>Use the <em>noStroke()</em> function if you don't want a stroke color</p>
+
+            	<pre><code>
+size(700, 500);
+
+// no stroke
+noStroke();
+fill(242, 172, 20);
+ellipse(width*0.25, height * 0.5, 150, 150);
+
+// black stroke
+stroke(0);
+fill(242, 172, 20);
+ellipse(width*0.75, height * 0.5, 150, 150);
+            	</code></pre>
+
+            	<p><img width="250"src="assets/img/nostroke.png" alt="" /></p>
+            </section>
+
+            <section>
+            	<p><strong>strokeWeight()</strong></p>
+
+            	<p>You can use the <em>strokeWeight()</em> function to change the width of the stroke.</p>
+            	            	            	<pre><code>
+size(700, 500);
+
+strokeWeight(1);
+line(width*0.25, height * 0.25, width*0.75, height * 0.25); 
+
+strokeWeight(3);
+line(width*0.25, height * 0.35, width*0.75, height * 0.35); 
+
+strokeWeight(5);
+line(width*0.25, height * 0.45, width*0.75, height * 0.45); 
+
+strokeWeight(7);
+line(width*0.25, height * 0.55, width*0.75, height * 0.55);
+
+strokeWeight(9);
+line(width*0.25, height * 0.65, width*0.75, height * 0.65);
+
+strokeWeight(10);
+line(width*0.25, height * 0.75, width*0.75, height * 0.75);
+            	            	</code></pre>
+            	
+            </section>
+            <section>
+            <p><img src="assets/img/strokeWeight.png" alt="" /></p>
+            <p>Experiment: make your own example using strokeWeight(), noFill(), stroke(), and noStroke() with a set of slightly overlapping rectangles.</p>
+            </section>
+
+            <section>
+            <h3>S6.2.4: custom shapes</h3>
+
+            <p>In Processing we can create our own shapes from a series of vertices. We can do by sandwiching a series of <em>vertex(x,y)</em> functions in between the <em>beginShape()</em> and <em>endShape()</em> functions.</p>
+            </section>
+            <section>
+            	<p>For example - let's make a funny fish:</p>
+            	<p><img src="assets/img/processing_beginShape-01.png" alt="" /></p>
+            </section>
+            <section>
+            	
+
+            	<pre><code>
+size(700, 500);
+strokeWeight(4);
+
+// right eye
+fill(255);
+ellipse(width*0.6, height*0.2, 50, 100);
+fill(0);
+ellipse(width*0.6, height*0.15, 25, 50);
+
+// body
+fill(255);
+stroke(0);
+beginShape();
+vertex(width*0.25, height*0.75);
+vertex(width*0.35, height*0.15);
+vertex(width*0.45, height*0.25);
+vertex(width*0.65, height*0.25);
+vertex(width*0.55, height*0.85);
+endShape(CLOSE);
+
+// left eye
+fill(255);
+ellipse(width*0.5, height*0.35, 50, 100);
+fill(0);
+ellipse(width*0.5, height*0.3, 25, 50);
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h1>S7: Data &amp; Variables &amp; Computation</h1>
+            </section>
+
+            <section>
+            	<p>What is data? Data could be anything from the time of day, the location of a bus stop, the color of your hair, and even the location of your mouse on the screen and the keys you pressed to login to your email. In general, data often consists of measurements of physical characteristics whether it be a digital photo of your dog or the precipitation in Vancouver.</p>
+            </section>
+
+            <section>
+            	<p>Processing can store, modify, and manipulate many different kinds of data, including numbers, letters, words, colors, images, fonts, and boolean values (true, false).</p>
+
+            	<p>One of the key features of programming is the ability to store values and/or data to variables. Below are the main data types in Processing - and programming in general - and examples of how to store them to a variable in Processing. NOTE: Processing (the java version) is strongly typed and thus we must declare what the data type will be when assigning data to a variable. If this sounds crazy, have a look at the examples below :)</p>
+            </section>
+            <section>
+            	<p>In the following sections we are going to quick go through:</p>
+
+            	<ol>
+            	<li>Arithmetic and mathematical functions</li>
+            	<li>Relational expressions (remember, what does the crocodile want to eat?)</li>
+            	<li>Variables &amp; data types</li>
+            	</ol>
+
+            </section>
+            <section>
+            	<h2>Arithmetic &amp; Functions</h2>
+
+            	<p>Here's a list of the main arithmetic functions in Processing. There are others including functions for making exponents, doing square roots, making log transformations, etc - for a full list check the Processing Documentation.</p>
+
+            	<pre><code>
++ (add)
+- (subtract) 
+* (multiply)
+/ (divide)
+% (modulus)
+() (parentheses)
+++ (increment)
+-- (decrement)
++= (add assign)
+-= (subtract assign)
+*= (multiply assign)
+/= (divide assign)
+- (negation)
+ceil()
+floor()
+round()
+min()
+max()
+            	</code></pre>
+            </section>
+
+            <section>
+            	<h2>Relational Expressions</h2>
+
+            	<p> A relational expression is made up of two values that are compared with a relational operator. In Processing, two values can be compared with relational operators as follows:</p>
+
+            	<pre><code> 
+Expression          Evaluation
+
+3&gt; 5                false
+
+3&lt; 5                true
+
+5&lt; 3                false
+
+5&gt; 3                true
+            	</code></pre>
+
+            </section>
+            <section>
+            	<p>In Processing, we have these relational operators at our fingertips in order to evaluate truthy or falsy values:</p>
+
+            	<pre><code>
+Operator            Meaning
+&gt;                   greater than
+
+&lt;                   less than
+
+&gt;=                  greater than or equal to &lt;= less than or equal to
+
+==                  equivalent to
+
+!=                  not equivalent to
+            	</code></pre>
+
+            </section>
+
+            <section>
+            	<h2>Variables and Data Types</h2>
+
+            	<p>In the earlier examples we saw the use of variables like <strong>mouseX</strong>, <strong>mouseY</strong> , and <strong>mousePressed</strong>. What we know about these variables is that they <strong>store data</strong> like the <strong>location of the x- and y- coordinate of the mouse</strong> or if the <strong>mouse is pressed</strong>.</p>
+            </section>
+
+            <section>
+            	<p>In programming languages, we can <strong>define our own variables to store data</strong> and in turn work with that data running calculations, statistics and/or visualizing it.</p>
+
+            	<p>Before we work through an example here are the <strong>fundamental data types</strong> in Processing, <strong>how to declare them</strong>, and <strong>assign them a value</strong>:</p>
+            </section>
+
+            <section>
+            	<p><strong><em>NOTE: remember our fancy dancy println() function? For each of the following examples, pass each of these variables into the println() function to show the value of the variables in the PDE console. Otherwise, your code will run, but you won't get any feedback ;)</em></strong></p>
+            </section>
+            <section>
+            	<ul>
+            	<li><h3>integer numbers</h3>
+
+            	<ul>
+            	<li>Integers are whole numbers such as 12, -120, 8, and 934.</li>
+            	<li>Processing represents integer data with the "int" data type. With variables, we can:</li>
+            	<li><p><strong>Assign single values to a variable:</strong></p>
+
+            	<pre><code> 
+// x is an integer equal to 10
+int x = 10;
+            	</code></pre>
+            	<ul>
+            	<li>This reads: <strong>x</strong> is an <strong>integer</strong> equal to <strong>10</strong></li>
+            	</ul>
+            	</li>
+            	</ul>	
+            </section>
+            <section>
+            <ul>
+            	<li><p><strong>Assign an expression to a variable:</strong></p>
+
+            	<pre><code>
+// y is an integer equal to 5 times 5
+int y = 5 * 5;
+            	</code></pre>
+
+            	<ul>
+            	<li>This reads: <strong>y</strong> is an <strong>integer</strong> equal to the product of <strong>5 and 5</strong></li>
+            	</ul>
+            	</li>
+				</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign an expression involving other variables to a variable:</strong></p>
+
+            		<pre><code>  
+// z is an integer equal to the sum of x and y
+int z = x - y ;
+            		</code></pre>
+
+            		<ul>
+            		<li>This reads: <strong>z</strong> is an <strong>integer</strong> equal to the sum of <strong>variable x and  variable y</strong></li>
+            		</ul>
+            		</li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+
+            <section>
+            <ul>
+            	<li><h3>floating numbers</h3>
+
+            	<ul>
+            	<li>Floating-point numbers have a decimal point for creating fractions of whole numbers such as 12.8, -120.75, 8.125, and 934.82736.</li>
+            	<li>Processing represents floating-point data with the "float" data type:</li>
+            	<li><p><strong>Assign single values to a variable:</strong></p>
+
+            	<pre><code>
+// i is an floating number equal to 95.7
+float i = 10.5
+            	</code></pre></li>
+            	</ul>
+            </section>
+            <section>
+            <ul>
+            	<li><p><strong>Assign an expression to a variable:</strong></p>
+
+            	<pre><code>  
+// j is an float equal to 5.0 times 5.0
+float j = 5.0 * 5.0;
+            	</code></pre></li>
+            	</ul>
+            </section>
+
+            <section>
+            <ul>
+            	<li><p><strong>Assign an expression involving other variables to a variable:</strong></p>
+
+            	<pre><code>  
+// k is a normalized difference between variables i and j
+float k = i - j / i + j ;
+            	</code></pre>
+            	<ul>
+            	<li>This reads: <strong>k</strong> is an <strong>float</strong> equal to the difference of <strong>variable i and  variable j</strong> divided by the sum of <strong>variable i and varible j</strong></li>
+            	</ul>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><h3>strings</h3>
+
+            		<ul>
+            		<li>A string is a sequence of characters.</li>
+            		<li>Processing represents string data with the "String" data type:</li>
+            		<li><p><strong>Assign single values to a variable:</strong></p>
+
+            		<pre><code>  
+// exclamation is a string containing the sentence "hello world!"
+String exclamation = "My Gosh! ";
+            		</code></pre></li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign an expression to a variable:</strong></p>
+
+            		<pre><code>  
+// task is a String expression "Hey yo"
+String task = "I'm" + " " + "programming.";
+            		</code></pre>
+
+            		<ul>
+            		<li>you can combine strings using the "+" operator.</li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign an expression involving other variables to a variable:</strong></p>
+
+            		<pre><code> 
+// realization is a string concatenating the variable exclamation and task
+String realization = exclamation + task;
+
+// use the text() function to render the text to the canvas
+text(realization, width/2, height/2);
+            		</code></pre></li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<h2>Boolean</h2>
+            	<ul>
+            		<li>A boolean is a true or false value. (remember the <strong>mousePressed</strong> value?)</li>
+            		<li>Processing represents boolean data with the "boolean" data type:</li>
+            		<li><p><strong>Assign single values to a variable:</strong></p>
+
+            		<pre><code>  
+// trueLove is a a boolean type set to true
+boolean trueLove = true;
+            		</code></pre></li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign an expression to a variable:</strong></p>
+
+            		<pre><code> 
+// falseExpression is a boolean type showing false for the expression 10 is less than 5
+boolean falseExpression = 10 &lt; 5;
+            		</code></pre>
+
+            		<ul>
+            		<li>10 is NOT less than 5, therefore the value of <strong>falseExpression</strong> is <strong>false</strong>.</li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign an expression involving other variables to a variable:</strong></p>
+
+            		<pre><code>  
+// trueExpression is a boolean type that is equal to the expression that trueLove does not equal falseExpression
+boolean trueExpression = trueLove != falseExpression;
+            		</code></pre></li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+
+            <section>
+            	<ul>
+            		<li><h3>arrays</h3>
+
+            		<ul>
+            		<li>An array is a <strong>list of data</strong>. It is possible to have an array of <strong>any type of data</strong>. BUT they must all be the same data type.</li>
+            		<li>Each piece of data in an array is identified by an index number representing its position in the array. The first element in the array is [0], the second element is [1], and so on (because PRocessing is "zero indexed").</li>
+            		<li>There are a few ways to create an array.</li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p><strong>Assign a list values to a variable:</strong></p>
+
+            		<pre><code>  
+// an array of integers:
+int[] d1 = {1, 2, 3, 4, 5, 6};
+
+// calculate the maximum value of the array
+int d1_max = max(d1);
+print(d1_max);
+
+// use the printArray() function to print it
+printArray(d1);
+            		</code></pre>
+
+            		<ul>
+            		<li>this reads: <strong>d1</strong> is an array of integers (int[]) with the values - 1,2,3,4,5,6. The max value printed to the console is 6.</li>
+            		<li>We use the <strong>printArray()</strong> function to print the numbers in the array.</li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p> <strong>Create an empty array, then append values to it:</strong></p>
+
+            		<pre><code>  
+// an empty array:
+int[] d2 = {};
+
+// add numbers to it
+d2 = append(d2, 20);
+d2 = append(d2, 40);
+d2 = append(d2, 60);
+            		</code></pre>
+
+            		<ul>
+            		<li>Keep this in mind when starting to work with data and you need to iteratively add values to an array.</li>
+            		</ul>
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<ul>
+            		<li><p> <strong>Create an array of a known size, then append values to it:</strong></p>
+
+            		<pre><code>  
+int[] numbers = new int[3];
+numbers[0] = 90;  // Assign value to first element in the array
+numbers[1] = 150; // Assign value to second element in the array
+numbers[2] = 30;  // Assign value to third element in the array
+int a = numbers[0] + numbers[1]; // Sets variable 'a' to 240
+int b = numbers[1] + numbers[2]; // Sets variable 'b' to 180 
+            		</code></pre></li>
+            		</ul>
+            		</li>
+            		</ul>
+
+            	</ul>
+            </section>
+            <section>
+            	<p><strong><em>Don't worry if I just lost you with arrays - they can be a little intimidating, but they are awesome, and they will hold onto our data so we can make stuff like this:</em></strong></p>
+
+            	<p><img src="assets/img/population-01.png" alt="" /></p>
+
+            	<p><strong><em>We will clear the air once we go through some control structures like conditionals and looping.</em></strong></p>
+            </section>
+
+            <section>
+            	<h1>S8: Control structures</h1>
+            </section>
+            <section>
+            <h2>if/else statements</h2>
+            	<p>Conditionals allow a program to make decisions about which lines of code run and which do not. They let actions take place only when a specific condition is met. Conditionals allow a program to behave differently depending on the values of their variables.</p>
+            	<p>if/else statements are ways to control the behavior of your program. This allows us to make decisions about what happens in our code. if/else statements might allow us to filter out data, change the size of an ellipse or rectangle depending on the value of a variable, or react to a mouse or key input (oooh fancy!).</p>
+            </section>
+
+            <section>
+            	<h3>A simple if statement</h3>
+
+            	<p>So this is the basic structure of an if statement. It basically says: "if a condition is met, execute the statements within the brackets."</p>
+
+            	<pre><code>
+// psuedo code - this wont run in Processing
+if (test) {
+    statements
+}
+            	</code></pre>
+            </section>
+
+            <section>
+            	
+            	<p>In our first sketch example (below), we played with <strong>conditional statements</strong> by using the <strong>if/else</strong> statement in conjunction with the <strong>mousePressed</strong> variable to tell the computer:</p>
+
+            	<p><em>"if the mouse is pressed, then change the background color and clear the ellipses from the canvas."</em></p>
+
+            	<pre><code>
+void setup() {
+    size(700, 500);
+    background(255);
+}
+
+void draw() {
+  if (mousePressed) {
+    background(255);
+  }
+  ellipse(mouseX,mouseY,40,40);
+}
+            	</code></pre>
+
+            </section>
+
+            <section>
+            	<h3>A simple if/else statement</h3>
+
+            	<p>But let's say we want more control over our program... what can we do? The <strong>if/else</strong> statement allows you to say:</p>
+
+            	<p><em>"if a condition is met, then execute the statements within the brackets of the "if" statement, HOWEVER if those conditions are NOT met, then run the statements within the brackets of the "else" statement."</em></p>
+
+            	<pre><code>
+// psuedo code - this wont run in Processing
+if (test) {
+        statements
+} else {
+    statements
+}
+            	</code></pre>
+            </section>
+
+            <section>
+            	
+            	<h4>Challenge 1: Your first if/else statement</h4>
+
+            	<p><img width = "250"src="assets/img/ifelse-1.png" alt="" /></p>
+
+            	<p>Take our code from above and write an <strong>if/else</strong> statement that draws ellipses with <strong>orange</strong>  stroke when the mouse is pressed and  rectangles with <strong>purple</strong> stroke if it is not pressed.</p>
+
+            	<ul>
+            	<li>Remove the <strong>background(255)</strong> in the <strong>if statement</strong> so that the shapes overlap.</li>
+            	<li>use the <strong>noFill()</strong> function to remove the fill from the shapes</li>
+            	<li>set the <strong>strokeWeight()</strong> to 2.</li>
+            	<li>add <strong>50%</strong> opacity to each of the stroke colors.</li>
+            	</ul>
+
+            </section>
+            <section>
+            	<h3>A simple if/else if/else statment</h3>
+
+            	<p>We've now made an if statement, and if/else statement, and now we want to add 1 more layer of control to our decision making. Here we introduce the "else if" conditional.</p>
+
+            	
+            </section>
+            <section>
+            	<p>The <strong>else if</strong> statement allows us to say "if a condition is met, then execute the statements within the brackets of the if statement, HOWEVER if those conditions are NOT met, then evaluate whether or not the condition is met for the "else if" statement. If the condition is met in the "else if statement", then run the statements within those brackets, if not, then check if the conditions are met in the next else if statement and so on and so forth. And if none of those are met, then run the else statement."</p>
+
+            	<pre><code>
+// psuedo code - this wont run in Processing
+if (test) {
+        statements
+} else if (test) {
+    statements
+} else if {
+    statements
+} 
+
+... (as many else if statements as you'd like)...
+
+else{
+    statements
+}
+            	</code></pre>
+            </section>
+            <section>
+            	<h4>Challenge 2: Deconstructing an if/else if/else statement</h4>
+
+            	<p><img src="assets/img/ifelseifelse-1.png" alt="" />
+            	Here's some kind of an 80's pattern you might have seen on a fanny pack.</p>
+            </section>
+            <section>
+            	<pre><code>
+void setup() {
+  size(700, 500);
+  background(255);
+  frameRate(10);
+  noStroke();
+}
+
+void draw() {
+  if (mousePressed) {
+    if (frameCount % 4 == 0) {
+      fill(#FFAB0D);
+      ellipse(mouseX, mouseY, 60, 60);
+    } else if (frameCount % 4 == 1) {
+      fill(#0DDDFF);
+      rect(mouseX, mouseY, 60, 60);
+    } else if (frameCount % 4 == 2) {
+      fill(#650DFF);
+      triangle(mouseX, mouseY, mouseX+ 60, mouseY+60, mouseX-60, mouseY+60);
+    } else {
+      fill(#FF0D66);
+      quad(mouseX, mouseY, mouseX, mouseY+60, mouseX-75, mouseY+60, mouseX+75, mouseY);
+    }
+  }
+}
+            	</code></pre>
+            </section>
+
+            <section>
+            	<p><strong><em>Wasn't that fun?! This may seem trivial, but essentially you can now write code that is responding to data and producing visuals based on the control structures you've put in place.</em></strong></p>
+            </section>
+
+            <section>
+            	<h2>S8.2:Logical Operators</h2>
+
+            	<p>We can have multiple "tests" conditions in an if or else if statement. Using the logical operators (such as the ones you see below) allow you to combine test conditions in an if/else if/ else statement makes it possible to do this.</p>
+
+            	<pre><code>
+Operator            Meaning
+
+&amp;&amp;                  AND 
+
+||                  OR 
+
+!                   NOT 
+
+
+
+Expression          Evaluation
+
+true &amp;&amp; true        true
+true &amp;&amp; false       false
+false &amp;&amp; false      false
+true || true        true
+true || false       true
+false || false      false
+!true               false
+!false              true
+            	</code></pre>
+
+            </section>
+
+            <section>
+            	<h4>Challenge 3: A simple drawing and erasing tool</h4>
+
+            	<p><img src="assets/img/draw&amp;erase.png" alt="" /></p>
+
+            </section>
+            <section>
+            	<p>Run this code and see what happens when you:</p>
+
+            	<ol>
+            	<li>press the mouse</li>
+            	<li>Press any key on your keyboard</li>
+            	<li>press both the mouse and keys on your keyboard</li>
+            	</ol>
+
+
+            	<!---->
+
+
+            	<p></p>
+
+            	<pre><code>
+void setup() {
+  size(700, 500);
+  background(0);
+  rectMode(CENTER);
+  noStroke();
+}
+
+void draw() {
+  if (mousePressed &amp;&amp; keyPressed) {
+    background(0);    
+  } else if (mousePressed){
+    fill(255);
+    rect(mouseX, mouseY, 60, 60);
+  } else if (keyPressed) {
+    fill(0);
+    rect(mouseX, mouseY, 60, 60);
+  }
+
+}
+            	</code></pre>
+
+            	<p>Add comments to the code at each conditional statement in the draw() function telling us what will happen if that stement is TRUE.</p>
+            </section>
+
+            <section>
+            	<h2>S8.3:repitition</h2>
+
+            	<p>Computers are excellent at executing repetitive tasks accurately and quickly. Modern computers are also logic machines. Building on the work of the logicians Leibniz and Boole, modern computers use logical operations such as AND, OR, and NOT to determine which lines of code are run and which are not.</p>
+
+            </section>
+
+            <section>
+            	<h3>S8.3.1:The for loop</h3>
+
+            	<p>The <strong>for loop</strong> is probably the coolest thing since ever. At the most basic level for loops allow your to repeat a statement or statements over and over again until a condition is met.</p>
+            </section>
+            <section>
+            	<p>Why are for loops so awesome? Let's look at an example of how a loop can be used to take a program which takes 14 lines of code to make 14 lines...</p>
+
+            	<pre><code>
+// original hard-coded program
+size(200, 200);
+line(20, 20, 20, 180);
+line(30, 20, 30, 180);
+line(40, 20, 40, 180);
+line(50, 20, 50, 180);
+line(60, 20, 60, 180);
+line(70, 20, 70, 180);
+line(80, 20, 80, 180);
+line(90, 20, 90, 180);
+line(100, 20, 100, 180);
+line(110, 20, 110, 180);
+line(120, 20, 120, 180);
+line(130, 20, 130, 180);
+line(140, 20, 140, 180);
+            	</code></pre>
+
+            </section>
+            <section>
+            	<p>... and make the program 4 lines of code:</p>
+
+            	<pre><code>
+size(200, 200);
+for (int i = 20; i &lt; 150; i += 10) {
+  line(i, 20, i, 180);
+}
+            	</code></pre>
+            	<p>If you were to read this out loud it would sound like: "for the integer i equals 20, as long as i is less than 80, increment i by 5, drawing a line each time with new y coordinates based on i."</p>
+            </section>
+
+            <section>
+            	<p>Let's get a little crazy and make a nested loop. A nested loop? You can do that?! Sure!</p>
+            </section>
+            <section>
+            	<pre><code>size(400, 400);
+            	noStroke();
+
+            	for (int i = 20; i &lt; width - 20; i += 20) {
+            	  for (int j = 20; j &lt; height - 20; j += 20) {
+            	        fill(random(255), random(255), random(255));
+            	        ellipse(i, j, 10, 10);
+            	    }
+            	}
+            	</code></pre>
+
+            	<p><img width = "250" src="assets/img/processing_nestedLoop.png" alt="" /></p>
+
+            	<p>How does a nested loop work? First, the outer loop starts. Then the inner loop runs until the condition is met at which point the outer loop increments, repeating the inner loop again until the condition is met at which point the outer loop increments, and over and over until the outer loop condition is met. This means that columns of ellipses are drawn from left to right with each complete loop.</p>
+            </section>
+
+            <section>
+            	<p>*NOTE: the random() function generates a random number from 0 to the value of the input parameter. In this case, for each iteration in the loop, a random number is generated between 0 and 255 for each parameter in the fill() function.</p>
+            </section>
+            <section>
+            	<h1>s9: Synthesis:</h1>
+
+            </section>
+            <section>
+            	<p>As our last examples, we will work with <strong>arrays</strong> to make some simple animations. We will use the following concepts we've picked up in this workshop:</p>
+
+            	<ul>
+            	<li>variables:
+
+            	<ul>
+            	<li>mousePressed, keyPressed</li>
+            	</ul>
+            	</li>
+            	<li>conditionals
+
+            	<ul>
+            	<li>if statements</li>
+            	</ul>
+            	</li>
+            	<li>increment
+
+            	<ul>
+            	<li>i++</li>
+            	</ul>
+            	</li>
+            	<li>shape properties
+
+            	<ul>
+            	<li>e.g. stroke, strokeWeight</li>
+            	</ul>
+            	</li>
+            	<li>shapes
+
+            	<ul>
+            	<li>point, line</li>
+            	</ul>
+            	</li>
+            	<li>random()</li>
+            	<li>looping:
+
+            	<ul>
+            	<li>for loops!</li>
+            	<li>draw function</li>
+            	</ul>
+            	</li>
+            	</ul>
+
+            </section>
+            <section>
+            	<h2>S9.1 Synthesis 1: Animated data line</h2>
+
+            	<p><img src="assets/img/aloha_drawArray1.gif" alt="" /></p>
+            </section>
+            <section>
+            	<pre><code>
+// Declare the arrays - globally
+int[] y = {};
+int[] x = {};
+
+// declare a counter variable i to increment through the arrays later
+int i = 0;
+
+// set the size and background color
+void setup() {
+  size(700, 500);
+  background(255);
+}
+
+// continuously evaluate the draw function
+void draw() {
+  if (mousePressed){
+    // append the x &amp; y coordinates of the mouse to array x and y
+    x = append(x, mouseX);
+    y = append(y, mouseY);
+    // draw a point with a strokeWeight 2 where the mouse is
+    strokeWeight(2);
+    stroke(150, 150, 150, 80);
+    point(mouseX, mouseY);
+  }
+    // when you press a key and 
+    // as long as the index is less than the length of the array 
+    // so we don't run out of data points to draw
+  if (keyPressed &amp;&amp; i+1 &lt; y.length) {
+    // increment i by 1 
+    i++;
+    // choose a random stroke color
+    stroke(random(255), random(255), random(255), 60);
+    // use the modulo to select a strokeWeight from 0 to 8 
+    // as the numbers increment
+    strokeWeight(i % 8);
+    // draw a line using the data from the array by 
+    // selecting the index positions 
+    line(x[i-1], y[i-1], x[i], y[i]);
+  }
+}
+            	</code></pre>
+
+
+            </section>
+            <section>
+            	<ul>
+            	<li>up until this point, we haven't seen the difference between global and local variable declaration. This is what we call <strong>variable scope</strong>. While global variables can be accessed across your entire program, local variables are limited to the functions that contain them.</li>
+            	<li>in this case, if we declared our array x and y in the setup fuction, we wouldnt be able to access that data in the draw function because it would be "stuck" inside the setup function and therefore not accessible in the draw function.</li>
+            	</ul>
+            </section>
+            <section>
+            	<h2>S9.2 Synthesis 2: Animated taxi trail</h2>
+
+            	<p>Let's make an animation of a taxi cab in Vancouver.</p>
+            	<p><img width = "400" src="assets/img/taxi-anim.gif" alt="" /></p>
+
+            	<p><strong><em> before you continue: 1. save your sketch as "taxi_trail", 2. copy the "assets/data" folder into your "taxi_trail" folder you just created.</em></strong></p>
+            </section>
+            <section>
+            	<pre><code>
+// To read in an image: 
+// 1. instantiate the PImage class &amp; 
+// 2. declare the image object 
+PImage backgroundmap;
+
+// An array of arrays of coordinates of a taxi in Vancouver
+int[][] coords = {{274,487},{274,487},{318,441},{328,428},{341,419},{353,410},{362,399},{365,392},{407,426},{447,446},{462,455},{506,473},{517,478},{526,484},{547,493},{551,497},{556,503},{559,507},{559,507},{566,512},{566,512},{573,518},{573,518},{581,524},{586,533},{598,542},{598,547},{584,560},{578,568},{567,578},{556,586},{549,597},{529,613},{523,619},{523,619},{521,622},{548,646},{562,658},{566,667},{556,681},{551,685},{534,668},{517,657},{508,648},{501,642},{491,656},{468,680},{457,671},{445,653},{430,636},{414,622},{398,607},{382,595},{350,571},{334,556},{346,544},{359,533},{339,504},{329,493},{319,483},{326,476},{335,468},{342,460},{336,448},{327,443},{315,451},{304,459},{293,466},{288,471},{278,479},{271,488},{267,476},{264,466},{257,456},{247,448},{237,442},{237,442},{231,436},{231,436},{224,430},{201,416},{200,415},{197,396},{200,381},{200,369},{200,369},{198,355},{189,345},{184,339},{201,335},{214,328},{228,324},{248,321},{261,316},{278,308},{314,302},{324,310},{326,313},{336,322},{339,316},{354,310},{361,311},{386,304},{394,298},{420,307},{422,310},{430,321},{437,321},{445,307},{454,296},{476,291},{481,293},{498,294},{507,288},{514,286},{533,284},{548,287},{556,281},{561,277},{561,270},{561,248},{552,254},{547,259},{532,262},{529,261},{511,254},{505,252},{476,244},{463,235},{452,223},{449,222},{419,214},{411,212},{403,207},{390,192},{383,176},{374,161},{353,148},{346,139},{341,128},{338,102},{330,88},{317,76},{306,64},{295,51},{288,84},{285,109},{263,108},{254,97},{260,85},{265,77},{268,63},{262,54},{260,42},{254,36},{237,39},{222,53},{206,62},{186,72},{178,90},{166,99},{153,105},{135,125},{130,150},{140,182},{140,205},{131,222},{120,230},{101,236},{89,256},{86,282},{93,293},{113,302},{133,303},{156,317},{170,328},{178,332},{196,333},{233,324},{264,322},{274,316},{289,301},{306,298},{320,303},{329,323},{331,345},{344,367},{355,378},{372,392},{390,409},{396,420},{414,438},{431,450},{439,460},{452,467},{460,476},{461,478},{448,502},{433,498},{424,490},{409,471},{401,463},{395,459},{393,467},{383,472},{375,467},{369,462},{363,467},{360,471},{360,476},{374,484},{386,495},{388,498},{392,504},{401,512},{402,513},{415,522},{422,532},{423,539},{413,544},{405,550},{396,556},{394,562},{402,567},{416,578},{421,582},{417,598},{397,616},{388,624},{373,632},{369,639},{366,647},{366,652},{376,661},{383,666},{377,676},{365,679},{348,688},{340,693},{333,697},{307,709},{291,717},{269,728},{256,735},{236,743},{228,757},{229,771},{228,782},{241,783},{265,783},{272,783},{275,784},{276,785},{281,800},{284,815},{299,826},{302,824},{310,805},{321,799},{345,784},{355,772},{357,770},{384,744},{387,736},{391,730},{399,725},{404,724},{417,721},{423,716},{432,706},{435,705},{446,698},{452,692},{478,665},{485,658},{487,655},{501,647},{513,632},{525,621},{538,608},{549,598},{556,591},{576,573},{589,551},{595,544},{609,552},{620,573},{632,582},{653,593},{681,599},{701,604},{737,606},{764,603},{765,613},{765,632},{763,650},{764,657},{783,658},{803,664},{804,679},{785,671},{752,663},{727,669},{709,671},{680,671},{661,666},{651,662},{638,649},{619,639},{601,624},{596,620},{589,614},{578,603},{571,594},{564,586}};
+
+// global counter variable i to increment the animation
+int i = 0;
+
+// set the size and background color
+void setup() {
+  size(960, 840);
+  background(255);
+  // read in the map image
+  // Images must be in the "data" directory to load correctly
+  backgroundmap = loadImage("backgroundmap_960x840.png");
+
+  // reduce the frame rate to slow the animation
+  frameRate(20);
+}
+
+
+// the draw function
+void draw(){
+  // load the image using the image() function 
+  //so the map is drawn every frame of the animation
+  image(backgroundmap, 0, 0);
+
+  // add annotations
+  //  fill(255);
+  //  stroke(255);
+  //  rect(width*0.60, 35, 500, 50);
+  //  
+  //  fill(255, 0, 0);
+  //  textSize(32);
+  //  text("click to show the route", width*0.62, 40, width*0.75, 200);
+
+  // animate the taxi as long as there data data available
+  // by incrementing i by 1 each frame
+  if(i+1 &lt; coords.length){
+    i++;
+    fill(255, 214, 46, 75);
+    strokeWeight(3);
+    stroke(255, 214, 46);
+    ellipse(coords[i][0], coords[i][1], 20, 20);
+  }
+
+  // if the mouse is pressed, draw the entire route of the taxi in red
+  if(mousePressed){
+    // using a for loop, we iterate through all the data points
+    // to draw the whole taxi route 
+    for(int j = 0; j &lt; coords.length - 1; j++){
+      strokeWeight(4);
+      stroke(255, 0, 0, 85);
+      // draw a line from position x1, y1 to x2, y2
+      line(coords[j][0], coords[j][1], coords[j+1][0], coords[j+1][1]);
+    }
+  }
+
+}
+            	</code></pre>
+            </section>
+
+            <section>
+            	<ul>
+            	<li>we add some new elements, one of which is the <strong>PImage</strong> class. Don't worry too much about this now as it relates to object oriented programming. The important thing to know is that the <strong>PImage</strong> class allows us to read in images and work with them in our sketches.</li>
+            	</ul>
+            </section>
+
+            <section>
+            	<p><strong><em>Whew! That's a lot of stuff. Take some time to play around with the code, decompress, have some coffee and a snack. If you made it this far you are amazing. I don't know about you but my mind is blown!</em></strong></p>
+
+            	<p><img src="https://media.giphy.com/media/Es3FISPjOZzAA/giphy.gif" alt="" /></p>
+            </section>
+
+            <section>
+            	<h1>Recap &amp; Future Directions:</h1>
+            </section>
+            <section>
+            	<h2>What we learned today</h2>
+
+            	<ul>
+            	<li>The fundamentals of programming in Processing - and programming in general. We covered:
+
+            	<ul>
+            	<li>Processing's primitive shapes &amp; how to make some of our own.</li>
+            	<li>Fundamental Data types</li>
+            	<li>Mathematical operations in Processing</li>
+            	<li>Variable declarations and assignments</li>
+            	<li>Conditionals (if / else if / else) and controlling program flow using logical operators</li>
+            	<li>For Loops</li>
+            	</ul>
+            	</li>
+            </section>
+            <section>
+            <ul>
+            	<li>We learned:
+
+            	<ul>
+            	<li>That we can program!</li>
+            	<li>How to begin thinking through code - how to break down problems into steps.</li>
+            	<li>We need to practice this stuff often to get better.</li>
+            	</ul>
+            	</li>
+            	
+            	</ul>
+            </section>
+            <section>
+            	<li>What we didn't learn:
+
+            	<ul>
+            	<li>We learned a lot of things today, but it certainly is only the tip of iceberg. There are tons of more functions and programmatic control structures we didn't get into today. It will be up to you to learn more about these things. There are a ton of great resources out there which are listed in the references section bewow.</li>
+            	<li>Here's a list of some of the major things I think we didn't cover today:
+
+            	<ul>
+            	<li>Different renderers (e.g. P3D, OPENGL, etc)</li>
+            	<li>While loops</li>
+            	<li>reading in tables, dictionaries, JSON</li>
+            	<li>Reading and writing files</li>
+            	<li>exporting to PDF or saving frames as PNG</li>
+            	<li>sharing your sketch online</li>
+            	<li>and the list goes on and on... :)</li>
+            	</ul>
+            	</li>
+            	</ul>
+            	</li>
+            </section>
+            <section>
+            	<h1>Future Directions</h1>
+            </section>
+            <section>
+            	<h2>Endless learning</h2>
+
+            	<p>There's so much more to learn and so much cool stuff we haven't yet done with data! Throughout the course I hope you can reference back to this workshop as you learn more about Processing and as a way to help you understand some of the other tools we will be using like R or Mapbox Studio, and others.</p>
+
+            </section>
+            <section>
+            	<h2>P5.js</h2>
+
+            	<p>I have to mention P5.js which is the javascript library inspired by Processing not only because it is super cool, but because I, along with many others, believe the age of the web is here!  P5.js is a javascript library that takes the soul of Processing and implements it in javascript meaning that you can sketch with code using web technologies (html, css, &amp; javascript). I would argue that the syntax is friendlier and is more flexible in terms of sharing your work. Besides the fact that the browser can crash if you send it a ton of data, P5.js may be an interesting way to move out of your desktop and onto the web.</p>
+
+            	<p>*NOTE: I decided not to teach P5.js since I thought introducing html, css, and javascript would be maybe too much for the first class. Please let me know if you have other thoughts!</p>
+            	<p>P5.js website:</p>
+
+            	<p>http://p5js.org/</p>
+
+            	<p>P5.js tutorials:</p>
+
+            	<p>http://p5js.org/tutorials/</p>
+            </section>
+            <section>
+            	<h1>References</h1>
+            </section>
+            <section>
+            	<p>"Processing, A Programming Handbook for Visual Artists and Designers" by Casey Reas and Ben Fry</p>
+
+            	<p>"Getting Started with Processing" - Ben Fry</p>
+
+            	<p>"Learning Processing" - Dan Shiffman</p>
+
+
+            <section>
+            	<h1>Resources</h1>
+            </section>
+            <section>
+
+            	<p>Learning Processing With Dan Shiffman - this dude is handsdown the best guy ever.</p>
+
+            	<ul>
+            	<li>Videos:
+
+            	<ul>
+            	<li> http://icm.shiffman.net/0.0/</li>
+            	<li> http://hello.processing.org/</li>
+            	</ul>
+            	</li>
+            	<li>Books:
+
+            	<ul>
+            	<li>learning Processing: http://learningprocessing.com/</li>
+            	</ul>
+            	</li>
+            	</ul>
+
+
+            	<p>"Programming Handbook for Visual Artists and Designers" by Casey Reas and Ben Fry</p>
+
+            	<ul>
+            	<li>https://processing.org/handbook/</li>
+            	</ul>
+
+
+            	<p>P5.js tutorials</p>
+
+            	<ul>
+            	<li>http://p5js.org/tutorials/</li>
+            	</ul>
+
+
+            	<p>"Getting Started with Processing" - Ben Fry</p>
+
+            	<ul>
+            	<li>http://www.amazon.com/gp/product/144937980X?ie=UTF8&amp;tag=benfrycom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=144937980X</li>
+            	</ul>
+
+
+            	<p>"Visualziing Data " - Ben Fry</p>
+
+            	<ul>
+            	<li>http://www.amazon.com/exec/obidos/ASIN/0596514557/ref=nosim/benfrycom-20</li>
+            	</ul>
+
+
+            	<p>Processing.org</p>
+
+            	<ul>
+            	<li>Reference: https://processing.org/reference/</li>
+            	<li>web: processing.org</li>
+            	</ul>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/head.min.js"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function() {
+                return !!document.querySelector('pre code');
+            },
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+    </script>
 </body>
+
 </html>
