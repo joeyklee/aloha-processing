@@ -119,7 +119,7 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
 ***
 ##S1. Form & Code - Examples
 
-[insert link to slides]
+[Examples Of Processing Projects](http://joeyklee.github.io/aloha-processing/#/)
 
 ***
 
