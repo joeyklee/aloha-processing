@@ -57,5 +57,4 @@ void draw(){
       line(coords[j][0], coords[j][1], coords[j+1][0], coords[j+1][1]);
     }
   }
-  saveFrame("img-######.png");
 }
