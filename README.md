@@ -42,17 +42,84 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
 ***
 
 
-## index
+## Index
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+  - [S1. Form & Code - Examples](#s1-form-&-code---examples)
+  - [S2. Introduction to Processing](#s2-introduction-to-processing)
+  - [S3. The Community](#s3-the-community)
+  - [S4. The Processing Environment](#s4-the-processing-environment)
+    - [The Text Editor & Display Window](#the-text-editor-&-display-window)
+- [S5. Getting Started](#s5-getting-started)
+  - [A static sketch](#a-static-sketch)
+  - [A dynamic sketch](#a-dynamic-sketch)
+  - [Dynamic Sketch Remix](#dynamic-sketch-remix)
+    - [Saving your work](#saving-your-work)
+- [S6: Fundamentals](#s6-fundamentals)
+  - [S6.1: Structure](#s61-structure)
+    - [S6.1.1: comments](#s611-comments)
+    - [S6.1.2: Printing to the console:](#s612-printing-to-the-console)
+    - [S6.1.3: functions](#s613-functions)
+  - [S6.2: Shape](#s62-shape)
+    - [S6.2.1: coordinates](#s621-coordinates)
+    - [S6.2.2: primitives](#s622-primitives)
+    - [S6.2.3: properties](#s623-properties)
+      - [Basic Color properties](#basic-color-properties)
+      - [Basic Stroke Properties](#basic-stroke-properties)
+    - [S6.2.4: custom shapes](#s624-custom-shapes)
+- [S7: Data & Variables & Computation](#s7-data-&-variables-&-computation)
+  - [Arithmetic & Functions](#arithmetic-&-functions)
+  - [Relational Expressions](#relational-expressions)
+  - [Variables and Data Types](#variables-and-data-types)
+- [S7: Control structures](#s7-control-structures)
+  - [Conditionals: if/else/else if statements](#conditionals-ifelseelse-if-statements)
+    - [A simple if statement](#a-simple-if-statement)
+    - [A simple if/else statement](#a-simple-ifelse-statement)
+      - [Challenge 1: Your first if/else statement](#challenge-1-your-first-ifelse-statement)
+    - [A simple if/else if/else statment](#a-simple-ifelse-ifelse-statment)
+      - [Challenge 2: Deconstructing an if/else if/else statement](#challenge-2-deconstructing-an-ifelse-ifelse-statement)
+      - [Challenge 3: A simple drawing and erasing tool](#challenge-3-a-simple-drawing-and-erasing-tool)
+  - [S9.3:repitition](#s93repitition)
+  - [S9.3.1:The for loop](#s931the-for-loop)
+  - [Synthesis 1: Animated data line](#synthesis-1-animated-data-line)
+  - [Synthesis 2:](#synthesis-2)
+- [Recap & Future Directions:](#recap-&-future-directions)
+  - [What we learned today](#what-we-learned-today)
+- [Future Directions](#future-directions)
+  - [Endless learning](#endless-learning)
+  - [P5.js](#p5js)
+- [Web Searching](#web-searching)
+- [References](#references)
+- [Resources](#resources)
+- [Appendix](#appendix)
+- [S8: More on math](#s8-more-on-math)
+  - [S8.1: arithmetic & functions - more examples](#s81-arithmetic-&-functions---more-examples)
+    - [S8.1.1: Add](#s811-add)
+    - [S8.1.2:subtract](#s812subtract)
+    - [S8.1.3:multiply](#s813multiply)
+    - [S8.1.4: divide](#s814-divide)
+    - [S8.1.5: modulo](#s815-modulo)
+    - [S8.1.6: parentheses](#s816-parentheses)
+    - [S8.1.7: increment](#s817-increment)
+    - [S8.1.8: decrement](#s818-decrement)
+    - [s8.1.9: += (add assign), -= (subtract assign), *= (multiply assign), /= (divide assign)](#s819--add-assign---subtract-assign--multiply-assign--divide-assign)
+    - [s8.1.10: ceil()](#s8110-ceil)
+    - [s8.1.10: floor()](#s8110-floor)
+    - [s8.1.11: round()](#s8111-round)
+    - [s8.1.12: min(), max()](#s8112-min-max)
+- [S9: More on Control](#s9-more-on-control)
+  - [S9.1 conditionals & decision making](#s91-conditionals-&-decision-making)
+    - [S9.1.1:Relational Expressions](#s911relational-expressions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ***
 ##S1. Form & Code - Examples
 
-[insert link to slides]
+[Examples Of Processing Projects](http://joeyklee.github.io/aloha-processing/#/)
 
 ***
 
@@ -753,9 +820,9 @@ Before we work through an example here are the **fundamental data types** in Pro
 ***We will clear the air once we go through some control structures like conditionals and looping.***		
 
 ***	
-# S7: Control structures
+# S8: Control structures
 
-## Conditionals: if/else/else if statements 
+## S8.1: Conditionals: if/else/else if statements 
 Conditionals allow a program to make decisions about which lines of code run and which do not. They let actions take place only when a specific condition is met. Conditionals allow a program to behave differently depending on the values of their variables.
 if/else statements are ways to control the behavior of your program. This allows us to make decisions about what happens in our code. if/else statements might allow us to filter out data, change the size of an ellipse or rectangle depending on the value of a variable, or react to a mouse or key input (oooh fancy!). 
 ***
@@ -850,7 +917,7 @@ Get into groups or talk to your neighbor and break this sketch down. Notice we i
 	}
 
 ***Wasn't that fun?! This may seem trivial, but essentially you can now write code that is responding to data and producing visuals based on the control structures you've put in place.***
-***##S9.2.4:Logical Operators 
+***##S8.2:Logical Operators 
 
 We can have multiple "tests" conditions in an if or else if statement. Using the logical operators (such as the ones you see below) allow you to combine test conditions in an if/else if/ else statement makes it possible to do this.
 
@@ -896,11 +963,11 @@ Run this code and see what happens when you:
 Add comments to the code at each conditional statement in the draw() function telling us what will happen if that stement is TRUE.
 
 ***
-##S9.3:repitition
+##S8.3:repitition
 	
 Computers are excellent at executing repetitive tasks accurately and quickly. Modern computers are also logic machines. Building on the work of the logicians Leibniz and Boole, modern computers use logical operations such as AND, OR, and NOT to determine which lines of code are run and which are not.
 	
-##S9.3.1:The for loop
+###S8.3.1:The for loop
 	
 The **for loop** is probably the coolest thing since ever. At the most basic level for loops allow your to repeat a statement or statements over and over again until a condition is met. 
 
@@ -935,7 +1002,7 @@ If you were to read this out loud it would sound like: "for the integer i equals
 ![](assets/img/processing_nestedLoop.png)
 How does a nested loop work? First, the outer loop starts. Then the inner loop runs until the condition is met at which point the outer loop increments, repeating the inner loop again until the condition is met at which point the outer loop increments, and over and over until the outer loop condition is met. This means that columns of ellipses are drawn from left to right with each complete loop. 
 *NOTE: the random() function generates a random number from 0 to the value of the input parameter. In this case, for each iteration in the loop, a random number is generated between 0 and 255 for each parameter in the fill() function. 
-***# Synthesis:
+***#s9: Synthesis:
 As our last examples, we will work with **arrays** to make some simple animations. We will use the following concepts we've picked up in this workshop:
 
 * variables:
@@ -954,7 +1021,7 @@ If you were to read this out loud it would sound like: "for the integer i equals
 	* draw function
 <!---->
 
-## Synthesis 1: Animated data line
+##S9.1 Synthesis 1: Animated data line
 
 ![](assets/img/aloha_drawArray1.gif)
 
@@ -1002,8 +1069,10 @@ If you were to read this out loud it would sound like: "for the integer i equals
 * up until this point, we haven't seen the difference between global and local variable declaration. This is what we call **variable scope**. While global variables can be accessed across your entire program, local variables are limited to the functions that contain them.
 * in this case, if we declared our array x and y in the setup fuction, we wouldnt be able to access that data in the draw function because it would be "stuck" inside the setup function and therefore not accessible in the draw function.
 
-## Synthesis 2: 
+##S9.2 Synthesis 2: Animated taxi trail
 Let's make an animation of a taxi cab in Vancouver.
+
+*** before you continue: 1. save your sketch as "taxi_trail", 2. copy the "assets/data" folder into your "taxi_trail" folder you just created.***
 
 ![](assets/img/taxi-anim.gif)
 
