@@ -74,18 +74,18 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
   - [Arithmetic & Functions](#arithmetic-&-functions)
   - [Relational Expressions](#relational-expressions)
   - [Variables and Data Types](#variables-and-data-types)
-- [S8: Control structures](#s8-control-structures)
-  - [S8.1: Conditionals: if/else/else if statements](#s81-conditionals-ifelseelse-if-statements)
+- [S7: Control structures](#s7-control-structures)
+  - [Conditionals: if/else/else if statements](#conditionals-ifelseelse-if-statements)
     - [A simple if statement](#a-simple-if-statement)
     - [A simple if/else statement](#a-simple-ifelse-statement)
       - [Challenge 1: Your first if/else statement](#challenge-1-your-first-ifelse-statement)
     - [A simple if/else if/else statment](#a-simple-ifelse-ifelse-statment)
       - [Challenge 2: Deconstructing an if/else if/else statement](#challenge-2-deconstructing-an-ifelse-ifelse-statement)
       - [Challenge 3: A simple drawing and erasing tool](#challenge-3-a-simple-drawing-and-erasing-tool)
-  - [S8.3:repitition](#s83repitition)
-    - [S8.3.1:The for loop](#s831the-for-loop)
-  - [S9.1 Synthesis 1: Animated data line](#s91-synthesis-1-animated-data-line)
-  - [S9.2 Synthesis 2: Animated taxi trail](#s92-synthesis-2-animated-taxi-trail)
+  - [S9.3:repitition](#s93repitition)
+  - [S9.3.1:The for loop](#s931the-for-loop)
+  - [Synthesis 1: Animated data line](#synthesis-1-animated-data-line)
+  - [Synthesis 2:](#synthesis-2)
 - [Recap & Future Directions:](#recap-&-future-directions)
   - [What we learned today](#what-we-learned-today)
 - [Future Directions](#future-directions)
@@ -1071,6 +1071,8 @@ If you were to read this out loud it would sound like: "for the integer i equals
 
 ##S9.2 Synthesis 2: Animated taxi trail
 Let's make an animation of a taxi cab in Vancouver.
+
+*** before you continue: 1. save your sketch as "taxi_trail", 2. copy the "assets/data" folder into your "taxi_trail" folder you just created.***
 
 ![](assets/img/taxi-anim.gif)
 
