@@ -36,6 +36,10 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
 
 **NOTE:** You are encouraged to work together on the initial composition, but your **remixes** should all look different.
 
+**Turning in the assignment**:
+* create a blog (that you create from wordpress, tublr, cargo collective, blogspot, etc)
+* you will post your **two images** AND **your code** to your blog.
+
 
 
 
