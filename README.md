@@ -42,8 +42,9 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
 * you will post your **two images** AND **your code** to your blog.
 * send the link to your blog to Joey and Sally.
 * Watch the video below to successfully copy your Procesing copy to your blog such that it is formatted with syntax highlighting
-<!---->
-<iframe src="https://player.vimeo.com/video/140105501" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/140105501">how-to-post-code-wordpress</a> from <a href="https://vimeo.com/leejoeyk">Joey Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+<iframe src="https://player.vimeo.com/video/140105501" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/140105501">how-to-post-code-wordpress</a> from <a href="https://vimeo.com/leejoeyk">Joey Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ***
 
