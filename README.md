@@ -37,12 +37,13 @@ Be sure to try and use **variables** -- ones that you define and in-built variab
 **NOTE:** You are encouraged to work together on the initial composition, but your **remixes** should all look different.
 
 **Turning in the assignment**:
+
 * create a blog (that you create from wordpress, tublr, cargo collective, blogspot, etc)
 * you will post your **two images** AND **your code** to your blog.
 * send the link to your blog to Joey and Sally.
-
-
-
+* Watch the video below to successfully copy your Procesing copy to your blog such that it is formatted with syntax highlighting
+<!---->
+<iframe src="https://player.vimeo.com/video/140105501" width="960" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/140105501">how-to-post-code-wordpress</a> from <a href="https://vimeo.com/leejoeyk">Joey Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ***
 
